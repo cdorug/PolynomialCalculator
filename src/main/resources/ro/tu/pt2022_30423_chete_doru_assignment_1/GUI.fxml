@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.tu.pt2022_30423_chete_doru_assignment_1.controller.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: white;" text="Polynomial Calculator" textAlignment="CENTER" textFill="#204c98" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Bodoni MT Bold" size="34.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.37972768532526474" layoutX="-1.0" layoutY="47.0" orientation="VERTICAL" prefHeight="443.0" prefWidth="607.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="197.0" prefWidth="605.0">
+               <children>
+                  <TextField fx:id="polynomial1" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="569.0" promptText="Please enter first polynomial" style="-fx-border-color: rgb(32, 76, 152);">
+                     <font>
+                        <Font name="Bodoni MT" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="polynomial2" layoutX="15.0" layoutY="66.0" prefHeight="25.0" prefWidth="569.0" promptText="Please enter second polynomial" style="-fx-border-color: rgb(32, 76, 152);">
+                     <font>
+                        <Font name="Bodoni MT" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="result" layoutX="17.0" layoutY="124.0" prefHeight="33.0" prefWidth="569.0" style="-fx-background-color: white; -fx-border-color: rgb(32, 76, 152);" text="..." textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="102.0" text="Result is:" textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="add" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#addOperation" prefHeight="81.0" prefWidth="173.0" text="Add" textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="subtract" alignment="CENTER" contentDisplay="CENTER" layoutX="215.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#subtractOperation" prefHeight="81.0" prefWidth="173.0" text="Substract" textAlignment="CENTER" textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="multiplication" layoutX="417.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#multiplicationOperation" prefHeight="81.0" prefWidth="173.0" text="Multiply" textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="divide" layoutX="15.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#divideOperation" prefHeight="81.0" prefWidth="173.0" text="Divide" textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="differentiate" layoutX="215.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#differentiateOperation" prefHeight="81.0" prefWidth="173.0" text="Differentiate" textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="integrate" layoutX="417.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#integrateOperation" prefHeight="81.0" prefWidth="173.0" text="Integrate" textFill="#204c98">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
